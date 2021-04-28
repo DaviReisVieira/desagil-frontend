@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-export default function Main() {
+export default function Main(props) {
     return (
         <View style={styles.container}>
             <Text>Main</Text>
