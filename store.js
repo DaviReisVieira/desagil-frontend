@@ -1,12 +1,7 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from "@reduxjs/toolkit";
 
-//import slices from './slices';
-
-//const inputs = Object.entries(slices);
-
-//const outputs = inputs.map(([k, v]) => [k, v.default.reducer]);
+import { templateSlice } from "./slices/template";
 
 export default configureStore({
-    //reducer: Object.fromEntries(outputs),
-    reducer: {},
+  reducer: { template: templateSlice.reducer },
 });
